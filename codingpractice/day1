@@ -1,0 +1,128 @@
+# Day 1-Basics 
+
+
+# Ansible Task - Install Nginx Server on Pathnex Server 
+
+
+
+-name : Install Nginx on Pathnex Server 
+ hosts: all
+ become:yes
+
+
+ tasks:
+ 
+-name: Insatll nginx 
+
+ 
+ yum:
+
+    name: nginx
+    state: present 
+
+
+
+
+
+## Terraform Task - Create EC2 (c5.xlarge)
+
+
+
+provider "aws"{
+region = "us-east-1"
+}
+
+
+resource "aws_instance" "PAthnexEC2" {
+ami = "ami-0abcd123abcd187"
+instance_type ="c5.xlarge"
+tags = {
+name ="pathnex-ec2"
+       }
+}
+
+
+
+
+
+
+
+
+
+## Kubernetes Task - Create Nginx Pod 
+
+
+apiVersion : v1
+kind : pod 
+metadata :
+  name : pathnex-pod
+spec :
+  containers :
+  - name : web
+  image : nginx:latest
+  ports :
+  - containerPort : 80
+
+
+
+
+
+## SHELL Script - Print date & hostname
+
+
+#!/bin/bash
+echo "Date: $(date)"
+echo "Hostname: $(hostname)"
+
+
+
+
+## GIT Integration 
+
+# Jenkins Pipeline - Checkout Git 
+
+You will learn how to checkout a git repo and list files.
+
+
+pipeline {
+     agent any 
+     stages {
+          stage ( 'checkout' ) {
+	     steps {
+	          git branch : 'main' , url: 'https://github.com/pathnex/sample-java-app.git'
+		  }
+	}
+
+	stage ('list files') {
+	steps {
+	     sh 'ls -la'
+	     }
+	    }
+	   }
+
+
+
+
+## Gitlab ci -chckout git 
+You will learn how to checkout a git repositry in gitlab ci.
+
+
+stages:
+  -checkout 
+
+
+git -checkout:
+ stage: checkout
+ script:
+     -git clone https://github.com/pathnex/sample-java-app.git
+     -cd sample-java-app
+     -ls -la
+
+
+
+
+
+
+
+##THATS ALL FOR DAY 1 CODING PRACTICE .
+
