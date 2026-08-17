@@ -1,0 +1,8 @@
+Git Collaborators – Short Notes
+
+Collaborator is a person who gets permission to work on a GitHub repository.
+A collaborator can clone, pull, push code, create branches, and raise Pull Requests, depending on their permission level.
+Repository owners can assign permissions like Read, Write, Maintain, or Admin.
+Collaborators are mainly used when working on a private repository with a team.
+Example: If you add a teammate as a collaborator, they can work on your project and push their changes according to the permission given.
+Collaborator ≠ Contributor: A collaborator has repository access; a contributor is someone who has contributed code to the project.

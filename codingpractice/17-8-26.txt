@@ -1,0 +1,11 @@
+1. 🚀 AWS cloud growth remains very strong
+
+AWS reported its fastest cloud growth in more than four years, with strong demand connected to AI workloads. Amazon is also planning around $220 billion in 2026 capital spending, showing how aggressively cloud/AI infrastructure is expanding.
+
+For DevOps: Expect more demand for EC2, EKS, networking, storage, monitoring, automation and infrastructure-as-code.
+
+2. ☁️ Global cloud infrastructure spending is booming
+
+Global enterprise spending on cloud infrastructure reached about $143 billion in Q2 2026, up 43% year over year, driven heavily by AI infrastructure.
+
+Interview point: Companies increasingly need engineers who understand AWS + Kubernetes + Terraform + CI/CD + cloud security.
