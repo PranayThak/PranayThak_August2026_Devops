@@ -1,0 +1,2 @@
+started day5 with ansible handlers to restart nginx, then creating ec2 with user data, adding resource limits in the k8 and finally created pipelines of jenkins & gitlab to use environment variables .
+
